@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="stylesheet" href="styler.css">
+  
+  <title>Portfolio</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+
+  <div class="generall-div">
+    <div class="left-side">
+      <div class="front-cart">
+        <div class="circle-div">
+          <div class="bigCircle"></div>
+          <div class="smallCircle"></div>
+        </div>
+        <div class="info-div">
+          <p class="printNum">0000 0000 0000 0000</p>
+          <div class="cartB">
+            <p class="userName">User Name</p>
+            <div>
+              <p class="date">09</p>
+              <span class="centerI">/</span>
+              <span id="dateY">00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="back-cart">
+        <p class="backC-p">000</p>
+      </div>
+    </div>
+    <div class="right-side">
+      <div class="right-side">
+        <div class="inputSide">
+          <div class="informaiton-container">
+              <p class="c-text">CARTHOLDER NAME</p>
+            <input type="text" placeholder="e.g.Jane Appleseed" class="name-In" id="userName" onkeyup="fillTheName()">
+            <p class="c-text">CART NUMBER</p>
+            <input id="userNumber" type="text" placeholder="e.g.1234 5678 9123 0000" class="name-In" onkeyup="containsAlphabet()">
+            <p id="f-error" class="primary-error">Wrong format, numbers only</p>
+          <div class="centeral">
+            <p class="c-text">EXP.DATE (MM/YY)</p>
+            <p class="b-text">CVC</p>
+          </div>
+          <div class="dateInput-container">
+            <input type="text" class="month-In" placeholder="MM" id="monthIn" onkeyup="fillTheDate()">
+            <input type="text" class="year-In" placeholder="YY" id="yearIn" onkeyup="fillTheYear()">
+            
+            
+            <input type="text" placeholder="e.g.123" class="Num-In" id="cvc" onkeyup="fillCvC()">
+            
+          </div>
+          
+          <div class="E-container">
+            <p id="s-error" class="primary-error">Cant be blank</p>
+            <p id="t-error" class="primary-error">Cant be blank</p>
+          </div>
+        
+          <div class="btn-container">
+            <button id="confirm" class="con-btn">Confirm</button>
+            
+          </div>
+          <div class="attribution">
+             You tube <a href="https://www.youtube.com/@Mirzoabbos" target="_blank">Mirzoabbos</a>. 
+             You tube <a href="https://www.youtube.com/@Shohjahon"target="_blank">Shohjahon</a>.
+          </div>  
+        </div>
+    </div>
+  </div>
+
+  <script src="life.js" ></script>
+  
+
+  
+  
+</body>
+</html>
